@@ -46,6 +46,9 @@ const multer = require("multer");
 const path = require("path");
 const prisma = require("./prisma/client"); // Pastikan prisma client sudah benar di-import
 
+// Menampilkan nilai DATABASE_URL di console untuk debugging
+console.log("DATABASE_URL:", process.env.DATABASE_URL);
+
 // Setup storage engine untuk multer
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
