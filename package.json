@@ -7,8 +7,10 @@
     "node": "20.x"
   },
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "build": "prisma generate",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
