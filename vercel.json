@@ -11,5 +11,11 @@
       "src": "/api/(.*)",
       "dest": "/index.js"
     }
-  ]
+  ],
+  "build": {
+    "env": {
+      "DATABASE_URL": "mysql://root:rizkon@localhost:3306/db_crud_express"
+    },
+    "commands": ["npx prisma generate"]
+  }
 }
